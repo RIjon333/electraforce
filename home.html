@@ -5,17 +5,19 @@
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Electra Force</title>
   </head>
   <body>
 
     <header>
-      <h2 class="logo">EFORCE</h2>
+      <a href="home.php", class="logo">EFORCE</a>
       <nav class="navigation">
-        <a href="#">HOME</a>
+        <a href="home.php">HOME</a>
         <a href="#">PROJECTS</a>
-        <a href="#">EFMESSENGER</a>
+        <a href="#">TEAM MEMBERS</a>
         <button class="btnLogin">LOGIN</button>
       </nav>
     </header>
@@ -45,7 +47,7 @@
             </label>
             <a href="#">FORGOT PASSWORD?</a>
           </div>
-          <button type="submit" class="btn">LOGIN</button>
+          <button type="submit" class="btn" onclick="login()">LOGIN</button>
           <div class="login-register">
             <p>NOT A TEAM MEMBER? <a href="#" class="register-link">REGISTER</a></p>
           </div>
@@ -56,11 +58,16 @@
 
     <div class="body-text-title">ELECTRA FORCE.</div>
 
-    <div class="body-text-description">BUILDING A SMARTER TOMMORROW TODAY</div>
+    <div class="body-text-description">BUILDING A SMARTER TOMMORROW, TODAY</div>
 
-    <script src="script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    <script src="index.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
 </body>
 </html>
 
