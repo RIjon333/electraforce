@@ -13,3 +13,6 @@ iconClose.addEventListener('click', ()=> {
     wrapper.classList.remove('active-popup')
 });
 
+function meettheteam() {
+        window.location.replace("https://electraforce.netlify.app/members");
+    }
